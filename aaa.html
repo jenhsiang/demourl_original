@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>硬是要縮 - 比 PPT 短網址更安全的縮網址服務</title>
+	<meta name="description" content="給你最安全的縮網址，讓你從此不再誤點有毒的縮址！縮網址統計功能，滿足你的行銷需求" />
+	<meta name="keywords" content="縮網址,短網址,縮址" />
+	<meta http-equiv="Content-Language" content="zh-tw" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="js/jquery/css/custom/jquery-ui-1.8.1.custom.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery/js/jquest-resize.js" type="text/javascript"></script>
+	<script src="js/jquery/js/zericlipborad/ZeroClipboard.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>	</head>
+	<body>
+			<div id="toolbar">			
+		</div>
+		<h1><a href="./" alt="硬是要縮"><img src="images/4funtw.png" alt="硬是要縮!" style="border: 0" /></a></h1>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-35256311-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>	
+	
+	
+	<div id="main">
+		<div id="announce">
+			<ul>
+				<li class="new">立即切換至「自訂選項」輕鬆整合 Google 分析！</a></li>
+				<li class="new">在短網址後面輸入「+」，隨時掌握點擊狀態！ » <a href="http://4fun.tw/Mdv+">範例</a></li>
+			</ul>
+		</div>
+		<form method="post" action="index.php">
+			<input type="hidden" name="m" value="s" />
+			<input type="hidden" name="cp_name" id="cp_name" value="">
+			
+			<div id="tabpane">
+				<ul>
+					<li><a href="#tabs-1">縮網址</a></li>
+					<li><a href="#tabs-2">安全設定</a></li>
+					<li><a href="#tabs-3">自訂選項</a></li>
+				</ul>
+				<div>
+					<div id="tabs-1">
+						<input name="origin_url" id="origin_url" type="text" class="txtbox_url" onkeyup="font_adjust(this);" onchange="font_adjust(this);" placeholder="在這邊輸入網址" />
+						<div class="comment" style="text-align: right; width: 400px;">開頭記得加上 http:// 唷</div>
+					</div>
+					
+					<div id="tabs-2">
+						<table>
+							<tr>
+								<td style="width: 90px;" class="tblheader">保存期限：</td>
+								<td><input id="dp_end" name="dp_end" type="text" /><img src="images/icon_notify.png" class="notify_icon" title="超過保存期限短，網址會自動失效" /></td>
+							</tr>
+							<tr>
+								<td class="tblheader">安全密碼：</td>
+								<td><input id="password" name="password" type="text" /><img src="images/icon_notify.png" class="notify_icon" title="可輸入任何文字(不設密碼請留空白)" /></td>
+							</tr>
+							<tr>
+								<td class="tblheader">安全門：</td>
+								<td><input type="text" maxlength="2000" name="allowed_url" id="allowed_url" style="width: 250px" /><img src="images/icon_notify.png" class="notify_icon" title="縮網址只在你能從你設定的網址點擊，從其他來網頁點擊都會失效喔!!" /></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div id="tabs-3">
+							
+						<table>
+							<tr>
+								<td colspan="2" class="settings_group_header">
+									<img src="images/ga_icon.png" alt="Google Analytics" /> Google Analytics 設定
+									<a href="https://support.google.com/analytics/answer/1033863" target="_blank">
+										<img src="images/icon_notify.png" class="notify_icon" title="使用說明" />
+									</a>
+								<td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">
+									utm_source:
+									<div class="settings_desc">廣告活動來源</div>
+								</td>
+								<td><input id="utm_source" name="utm_source" type="text"/></td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">
+									utm_medium:
+									<div class="settings_desc">廣告活動媒介</div>
+								</td>
+								<td><input id="utm_medium" name="utm_medium" type="text"/></td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">
+									utm_term:
+									<div class="settings_desc">廣告活動字詞</div>
+								</td>
+								<td><input id="utm_term" name="utm_term" type="text"/></td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">
+									utm_content:
+									<div class="settings_desc">廣告活動內容</div>
+								</td>
+								<td><input id="utm_content" name="utm_content" type="text"/></td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">
+									utm_campaign:
+									<div class="settings_desc">廣告活動名稱 </div>
+								</td>
+								<td><input id="utm_campaign" name="utm_campaign" type="text"/></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="settings_group_header">一般設定<td>
+							</tr>
+							<tr>
+								<td style="width: 80px;" class="tblheader">註解說明：</td>
+								<td><input id="comment" name="comment" type="text"/></td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+				<div class="big_button">
+					<!--<input name="Button1" type="button" onclick="gen_short_url();" value="給我ㄍㄧㄨ！" class="shortbtn" />-->
+					<button type="button" onclick="gen_short_url();"  class="shortbtn" name="Button1" ><img src="images/logo.png" /></button>
+				</div>
+				
+				<div class="ui-widget" id="error_pane"  style="display:none">
+					<div class="ui-state-error ui-corner-all" style="margin: 0.7em;padding: 0 .7em;"> 
+						<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span> 
+						<strong>喔喔！</strong> <span id="errormsg"></span></p>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="ui-widget">
+				<div class="ui-state-highlight ui-corner-all" style="margin: 20px auto; width: 450px; padding: 0 .7em;"> 
+					<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+
+					到目前為止，硬是要縮已經縮了 <strong></strong> 個網址
+				</div>
+			</div>
+			-->
+		</form>
+	</div>	
+	
+	<div id="result_pane" title="短網址產生成功!" style="display:none">
+		
+		<div id="result_url_block">
+			<img src="images/link.png" alt="縮網址" /> 您的短網址<br />
+			<!--<input type="text" id="short_url" class="url_text" readonly="readonly"/> <a id="copy_btn">[複製]</a><br />-->
+			<div class="url_text inline_element" id="short_url"></div> 
+			<div class="splitter"></div>
+			
+			<img src="images/qr_code.png" alt="QR Code 網址" /> QR Code<br />
+			<input type="text" id="qr_img_url" class="url_text"  readonly="readonly"/><br />
+			
+			趕快把短網址分享給你的朋友吧！
+		</div>
+		<div id="result_qr_block">
+			QR Code：<br />
+			<div style="text-align: center"><img id="qr_img" src="" width="130" height="130"/></div>
+		</div>
+		
+		<div class="splitter"></div>
+		
+		<div class="big_button"><input id="closebtn" type="button" onclick="" value="關閉" class="shortbtn" /></div>
+	</div>
+			<div id="footer">
+			<a href="index.php">首頁</a> | 
+			<a href="http://www.soft4fun.net/website-recommand/%E3%80%8C%E7%A1%AC%E6%98%AF%E8%A6%81%E7%B8%AE%E3%80%8D4fun-tw-%E5%85%8D%E8%B2%BB%E3%80%81%E5%AE%89%E5%85%A8%E3%80%81%E5%A5%BD%E8%A8%98%E7%9A%84%E7%B8%AE%E7%9F%AD%E7%B6%B2%E5%9D%80%E6%9C%8D%E5%8B%99.htm">功能說明</a> |
+			<a href="javascript:void(location.href='http://4fun.tw/gen.php?via=bookmark&url='+encodeURIComponent(window.location.href));" title="快把我拉到書籤工具列！">4fun短網址工具</a> |
+			<a href="https://chrome.google.com/webstore/detail/%E7%A1%AC%E6%98%AF%E8%A6%81%E7%B8%AE/efceaemlnabjahlebbmejdafdmpofgop" target="_blank">縮網址工具 (Chrome)</a> |
+			<a href="tos.php">使用規範</a> | 
+			<a href="javascript:void( window.open('http://www.jotform.com/form/1502509112', 'blank','scrollbars=yes,toolbar=no,width=700,height=500'))">聯絡我們</a>  <br />
+			<span style="color: #000">硬是要縮 - 安全、快速的縮網址服務 </span>
+			<div id="webutation-badge">
+				<script type="text/javascript">
+				(function() {
+				window.domain = '4fun.tw';
+				function async_load(){
+				 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+				 var p = ('https:' == document.location.protocol ? 'https://' : 'http://');
+				 s.src = p+'www.webutation.net/js/load_badge.js';
+				 var x = document.getElementById('webutation-link'); x.parentNode.insertBefore(s, x); }
+				if (window.attachEvent) window.attachEvent('onload', async_load); else window.addEventListener('load', async_load, false);
+				})();
+				</script>
+				<a id="webutation-link"  href="http://www.webutation.net/go/review/4fun.tw">4fun.tw Webutation</a>
+			</div>
+		</div>	body>
+</html>

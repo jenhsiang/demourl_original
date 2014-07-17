@@ -1,0 +1,406 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+h1{
+	font:bold 25px Optima,"Trebuchet MS",Tahoma,"å¾®èşıæ­şışıé«şı,"Hiragino Sans GB","Microsoft Yahei",Sans-serif;
+	text-shadow:0 2px 3px rgba(0, 0, 0, 0.3);
+	text-align:center;
+	color:#2777D8;
+	font-size: 40px;
+	margin-bottom: -10px;
+}
+
+input, textarea{
+	border: 1px solid #C0C0C0;	
+}
+
+input:focus, textarea:focus{
+	background-color:#f9f0c8;
+}
+
+.go_button{
+	background: #CDCDCD;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: .4em 1em;
+}
+
+.go_button_campaign{
+	border: 1px solid #77d5f7;
+	background: #0078ae url('images/btn_bg.png') 50% 50% repeat-x;
+
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: .4em 1em;
+}
+
+.go_button_enable{
+	border: 1px solid #77d5f7;
+	background: #0078ae url('images/btn_bg.png') 50% 50% repeat-x;
+}
+
+table{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#main{
+	padding-top:10px;
+	margin: 0 auto;
+	width: 800px;
+}
+
+#announce{
+	padding-bottom: 15px;
+	margin: 0 auto;
+	width: 450px;
+	font-weight: bolder;
+	/*text-align: center;*/
+}
+
+#announce a{
+	color: gray;
+}
+
+#announce ul{
+	list-style: none;
+}
+
+#announce ul .new{
+	padding-left: 28px;
+	background: url('images/new.png') no-repeat;
+}
+
+#result{
+	padding-top: 20px;
+	font-size:16px;
+	color:blue;
+}
+
+#footer {
+	text-align: center;
+	letter-spacing: 2px;
+	color: #808080;
+	margin: 30px auto;
+	padding-top:15px;
+	width: 800px;
+	border-top: 1px solid gray;	
+	
+}
+
+#tabpane{
+	width: 450px;
+	margin: 0 auto;
+	font-size:12px;
+}
+
+.settings_group_header{
+	font-size: 15px;
+	font-weight: bold;
+	background: #BDDEEB;
+	border-radius: 4px;
+	padding: 4px 3px 3px 10px;
+}
+
+.settings_desc{
+	color:#AAA; 
+	font-weight: normal;
+}
+
+
+/* şıè¦½şıé¢ */
+#preview_pane{
+	width: 740px;
+	margin: 0 auto;
+	font-size:12px;
+}
+
+#target_meta_pane{
+	height: 175px;
+	max-height: 200px;
+	overflow-y: hidden;
+}
+
+#target_thumb {
+	float: left;
+	max-width: 200px;
+	width: 200px;
+	/*border: 3px solid #CCC;
+	border-radius: 17px;*/
+	margin-left: 30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+	vertical-align: middle;
+}
+
+#target_thumb_pic{
+	border-radius: 8px;
+	/*border: 3px solid #666;*/
+	box-shadow: 1px 5px 15px #9F9F9F;
+}
+
+#target_info{
+	float: right;
+	max-width: 460px;
+	width: 460px;
+	overflow-y: hidden;
+	font-family: "å¾®èşıæ­şışıé«şı;
+}
+
+#target_info_title{
+	font-size: 22px;
+	line-height: 1.6;
+	max-height: 27px;
+	overflow-y: hidden;
+	padding-bottom: 10px;
+	font-family: "å¾®èşıæ­şışıé«şı;
+}
+
+.target_info_empty{
+	
+	letter-spacing: 5px;
+	font-weight: normal !important;
+}
+
+#target_info_desc{
+	font-family: Verdana, Arial;
+	font-size: 12px;
+	line-height: 1.4;
+	letter-spacing: 1.5px;
+	text-align: justify;
+	color: #333;
+}
+
+#target_url_pane{
+	padding-top: 10px;
+	/*margin-bottom: -15px;*/
+}
+
+#security_copy_pane{
+	line-height: 30px;
+	vertical-align: middle;
+	float: left;
+	color: gray;
+}
+
+#target_url_addr{
+	max-height: 40px;
+	overflow-y: hidden;
+}
+
+#security_info{
+	/*line-height: 40px; */
+	vertical-align:middle
+}
+
+#scurity_flag {
+	/*position: relative;
+	left: -38px;
+	top: 3px;*/
+}
+
+#original_url, #target_url{
+	background-color:#f9f0c8;
+	height: 29px;
+	vertical-align: middle;
+	width: 665px;
+	font-size: 16px;
+	margin: 0 0 19px 2px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+
+.security_flag{
+	border:0;
+}
+
+.security_message{
+	font-weight: bold;
+	font-family: å¾®èşıæ­şışıé«şı
+	font-size: 20px;
+	padding-left: 4px;
+}
+
+/***************************************/
+
+
+#dp_start, #dp_end{
+	width: 80px;
+	font-size:12px;
+}
+
+#tabs-1{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+#result_pane{
+	font-size: 12px;
+}
+
+#result_url_block{
+	float: left;
+	width: 300px;
+}
+
+#result_qr_block {
+	float: right;
+}
+
+#gen_result_url_block{
+	float: left;
+	width: 265px;
+}
+
+#gen_result_qr_block {
+	float: right;
+	padding-right: 35px;
+	padding-top: 1.5em;
+}
+
+#message {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0 20px 0;
+	color: #2777D8;
+	height: 40px;
+	vertical-align: middle;
+
+}
+
+#pass_pane, .ad-pane{
+	text-align: center;
+}
+
+
+
+#detail_pane{
+	padding: 10px;
+}
+
+#adsense_bottom{
+	padding-top: 15px;
+	text-align:center;
+}
+
+#link_copy{
+	font-family:"å¾®èşıæ­şışıé«şı;
+	text-align: center;
+	font-size: 20px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+#toolbar{
+	text-align: right;
+	margin-top: 5px;
+}
+
+.url_text{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 5px 0 20px 0;
+	color: #2777D8;
+	background-color:#f9f0c8;
+	height: 25px;
+	width: 225px;
+	vertical-align: middle;
+	border: 1px solid #C0C0C0;	
+}
+
+.inline_element{
+	float: left;
+}
+
+.url_text_big_size{
+	font-size: 24px !important;
+	height: 39px !important;
+	width: 95% !important;
+}
+
+.comment{
+	color: gray;
+	font-size:12px;
+}
+
+.txtbox_url {
+	font-size: 24px ;
+	height: 40px;
+	width: 100%;
+}
+
+.shortbtn {
+	font-size: 18px !important;
+	text-align: center;
+	width:95%;
+	margin-bottom: 5px;
+}
+
+.notify_icon{
+	margin-left: 3px;
+}
+
+.tblheader{
+	font-weight: bolder;
+	text-align: right;
+}
+
+.txtbox_pass {
+	height: 40px;
+	width: 300px;
+}
+
+.big_button{
+	text-align: center;
+}
+
+.navigate_button {
+	text-align: right;
+	padding-top: 18px;
+	border-top: 1px solid #ccc;
+}
+
+
+.new_feature{
+	/*padding-left: 18px;*/
+	background: url('images/new.png') no-repeat;
+	background-position: 20px center;
+}
+
+.splitter{
+	clear: both;
+}
+/* Floattitle */
+#floattitle {position:absolute;z-index:1000;max-width:250px;word-wrap:break-word;background:#000;text-align:left;padding:5px;min-height:1em;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+#floattitle p {color:#F8DA4E;font-size:14px; font-family:å¾®èşıæ­şışıé«şıArial; font-weight: bolder;}
+#floattitle p em {display:block;margin-top:3px;color:#FFF;font-style:normal;font-size:12px;}
+
+
+/*mobile*/
+/************************************************************************************/
+#m_target_thumb{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.m_security_message{
+	font-size: 16px;
+}
